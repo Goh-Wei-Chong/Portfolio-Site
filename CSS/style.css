@@ -150,9 +150,17 @@ header ul li a {
 .footend.night {
   background: #444;
 }
-.footend.night a, 
-.footend.night p {
-  color: #fff;
+.footend.night nav a {
+  color: #e4e4e4;
 }
-
+.footend.night nav a:hover {
+  color: #ffffff;
+}
+.footend.night .footer-logo a,
+.footend.night p {
+  color: #cacaca;
+}
+.footend.night .footer-logo a:hover {
+  color: #e4e4e4;
+}
 
