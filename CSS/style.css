@@ -15,16 +15,19 @@ body {
 
 .banner {
   position: relative;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding: 100px;
+
   background: #fff;
   transition: 0.5s
 }
 .banner.night {
   background: #333;
+}
+.banner.night header {
+  background: #333;
+  color: #fff;
 }
 
 /* Header */
@@ -42,6 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
 }
 header .logo {
   color: #333;
@@ -67,11 +71,25 @@ header ul li a {
   color: #333;
   transition: 0.5s
 }
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#2196f3, #2196f3)
+}
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
 
 /* Content */
 .content {
   position: relative;
-  max-width: 770px;
   z-index: 10;
 }
 .content h3 {
