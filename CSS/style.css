@@ -9,6 +9,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.display-none {
+  @apply hidden;
+}
+
 body {
   flex: auto;
 }
@@ -18,15 +22,13 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-
   background: #fff;
   transition: 0.5s
 }
-.banner.night {
+.banner.dark {
   background: #333;
 }
-.banner.night header {
-  background: #333;
+.banner.dark header {
   color: #fff;
 }
 
@@ -131,8 +133,8 @@ header ul li a {
   color: #333;
 }
 
-/* Day / Night */
-.dayNight {
+/* Light / Dark */
+.lightDark {
   margin-left: 70px;
   transform: translateX(-50%);
   width: 60px;
@@ -147,38 +149,37 @@ header ul li a {
   transition: 0.5s;
   font-size: 2em;
 }
-.banner.night .dayNight {
+.banner.dark .lightDark {
   background: #444;
   color: #fff;
 }
-.dayNight ion-icon:nth-child(2),
-.banner.night .dayNight ion-icon:nth-child(1) {
+.lightDark ion-icon:nth-child(2),
+.banner.dark .lightDark ion-icon:nth-child(1) {
   display: none;
 }
-.banner.night .dayNight ion-icon:nth-child(2) {
+.banner.dark .lightDark ion-icon:nth-child(2) {
   display: block;
 }
-.banner.night header .logo,
-.banner.night .content h2,
-.banner.night .content p,
-.banner.night .content button.chat,
-.banner.night header ul li a {
+.banner.dark header .logo,
+.banner.dark .content h2,
+.banner.dark .content p,
+.banner.dark .content button.chat,
+.banner.dark header ul li a {
   color: #fff;
 }
-.footend.night {
+.footend.dark {
   background: #444;
 }
-.footend.night nav a {
+.footend.dark nav a {
   color: #e4e4e4;
 }
-.footend.night nav a:hover {
+.footend.dark nav a:hover {
   color: #ffffff;
 }
-.footend.night .footer-logo a,
-.footend.night p {
+.footend.dark .footer-logo a,
+.footend.dark p {
   color: #cacaca;
 }
-.footend.night .footer-logo a:hover {
+.footend.dark .footer-logo a:hover {
   color: #e4e4e4;
 }
-

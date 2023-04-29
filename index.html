@@ -11,7 +11,7 @@
   <body>
     <!--Banner container-->
     <section class="banner">
-      <header class="sticky top-0 bg-white z-20">
+      <header class="sticky top-0 bg-white/30 z-20 bg-opacity-90 border-b border-gray-200 backdrop-blur-sm dark:bg-neutral-800 dark:backdrop-blur-sm dark:bg-opacity-90">
         <a href="#" class="logo"><span>Dear</span>Portfolio_</a>
         <div class="title">
           <ul>
@@ -22,9 +22,9 @@
           </ul>
 
           <!--Light / Dark mode container-->
-          <div class="dayNight">
-            <ion-icon name="moon-outline"></ion-icon>
-            <ion-icon name="sunny-outline"></ion-icon>
+          <div class="lightDark">
+            <ion-icon name="moon-outline" class="moon"></ion-icon>
+            <ion-icon name="sunny-outline" class="sun"></ion-icon>
           </div>
         </div>
       </header>
@@ -39,7 +39,7 @@
           <button>Hire Me</button>
           <button class="chat">Let's Chat</button>
         </div>
-        <img src="public/profile.jpg" alt="me" class="max-w-sm rounded-2xl">
+        <img src="/profile.jpg" alt="me" class="max-w-sm rounded-2xl">
       </div>
     </section>
     
@@ -97,6 +97,10 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
     <script type="module" src="/Javascript/script.js"></script>
+    <script type="module" src="/Javascript/lightDark.js"></script>
   </body>
 </html>
